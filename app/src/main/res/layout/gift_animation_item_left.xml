@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+    <View
+        android:id="@+id/viewBg"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/gift_bg_left" />
+
+    <RelativeLayout
+        android:id="@+id/llContentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:id="@+id/llLeftLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="60dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:text="我 "/>
+
+            <TextView
+                android:id="@+id/tv_gift_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送出"
+                android:textColor="#ffffff"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_gift_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_chat_gift"
+            android:layout_toRightOf="@+id/llLeftLayout"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_gift_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:text="x1"
+        android:textColor="#ff9900"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/llContentLayout" />
+
+
+</RelativeLayout>
